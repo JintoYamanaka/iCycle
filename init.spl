@@ -1,0 +1,46 @@
+create database ifive_intern;
+
+grant all on ifive_intern.* to ifive@mysql470.db.sakura.ne.jp identified by 'dliephf945';
+
+use company_db;
+
+
+create table pre_member (                            //仮登録用
+  id int not null auto_increment primary key,
+  urltoken varchar(128) not null,
+  //mail varchar(50) not null,     //消した
+  date datetime not null,
+  //flag tinyint(1) not null default 0     //消した
+)ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;
+
+desc pre_member;
+
+
+create table member (                               //本登録用、ユーザ情報を格納
+  id int not null auto_increment primary key,
+  username varchar(50) not null unique,
+  mail varchar(128) not null unique,
+  password varchar(300) not null,
+  //flag tinyint(1) not null default 1       //消した
+  date datetime not null
+)ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;
+
+desc member;
+
+
+create table product (                           //出品登録用、商品情報を格納
+  id int not null auto_increment primary key,
+  username varchar(50) not null,
+  image0 varchar(300) not null,      //画像のファイル名、文字数わかんね、そもそもimage複数いける？0123で分けるか
+  image1 varchar(300) ,
+  image2 varchar(300) ,
+  image3 varchar(300) ,
+  pname varchar(50) not null,
+  category varchar(50) not null,    //50いらない？
+  _condition varchar(50) not null,   //50いらない？
+  explanation varchar(300) not null,  //文字数？
+  price varchar(50) not null,    //50もいらない気が
+  date datetime not null
+);
+
+desc product;

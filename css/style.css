@@ -1,0 +1,588 @@
+@charset "utf-8";
+
+#allpage {
+  width: 1080px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body{
+  line-height: 2;
+  font-size: 15px;
+}
+
+header{
+  background-image: url(../images/book1-4-2-header.jpg);
+  /* background-image: url(../images/AboutUs1.jpg); */
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  top:0;
+  left:0;
+  width:100%;
+  height:100px;
+  padding: 35px 0;
+  margin-top: 80px;
+}
+
+.content{
+  padding-top:10px;
+  margin: 30px auto;
+  width: 100%;
+  /* width: 960px; */
+  padding-bottom:10px;
+}
+
+.main {
+  width: 800px;
+  float: left;
+  padding-bottom: 120px;
+}
+
+.main-center {
+  width: 100%;
+  /* width: 960px; */
+  margin: 0 auto 30px;
+  padding-bottom: 80px
+}
+
+footer{
+  text-align: center;
+  color: #ffffff;
+  padding: 25px 0;
+  background-color: #767671;
+  width: inherit;
+  /* width: 1080px; */
+  bottom: 0;
+  height: 50px;
+  position: absolute;
+}
+
+footer small {
+  font-size: 17px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+}
+
+img {
+  vertical-align:bottom;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #3583aa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom:20px;:
+}
+
+.logo {
+  margin: -110px 0px 50px 0px;
+  /* width: 80px; */
+}
+
+.logo img{
+  width:150px;
+}
+.global-nav {
+  float: right;
+  margin: 20px 60px 0px 0px;
+}
+
+.global-nav li {
+  float: left;
+  margin: 0 20px;
+  font-size: 20px;
+  list-style: none;
+  font-family: 'Bitter', serif;
+}
+
+.global-nav li a {
+  color: #ffffff;
+}
+
+.global-nav li a:hover {
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+
+#index {
+  background-image: url(../images/book1-4-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#index h1 {
+  font-size: 100px;
+  line-height: 1;
+  color: #ffffff;
+  font-family: 'Bitter', serif;
+  margin-bottom: 50px;
+  border: none;
+}
+
+#index header {
+  background-image: none;
+}
+
+#index .content {
+  padding-bottom: 100px;
+  width: 80%;
+}
+
+#index p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+#index footer {
+  margin-left: 90px;
+  text-align: left;
+  background-color: transparent;
+}
+
+.btn a {
+  background-color: #009cd3;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Bitter', serif;
+  width: 185px;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 3px solid #009cd3;
+}
+
+.btn a:hover {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #009cd3;
+}
+
+h1 {
+  font-family: 'Bitter', serif;
+  font-size: 36px;
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-family: 'Bitter', serif;
+  font-size: 24px;
+}
+
+.icon:before {
+  content: "";
+  padding-right: 10px;
+  border-left: 7px solid #9cb4a4;
+}
+
+.icon{
+  margin-top: 20px;
+  margin-bottom: 20px
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.sidebar {
+  width: 200px;
+  float: right;
+  font-family: 'Bitter', serif;
+}
+
+a img:hover {
+  opacity: 0.8;
+}
+
+.sidebar h2 {
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.sidebar ul a {
+  color: gray;
+}
+
+#item-list ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* 商品一覧のリストの設定 */
+#item-list ul li {
+  display: block;
+  float: left;
+  height: 300px;
+  width: 220px;
+  list-style-type: none;
+  background: WhiteSmoke;
+  text-align: center;
+  margin: 0 40px 30px 0;
+}
+
+#item-list .box{
+  position: relative;
+  width: 190px; /* 領域の幅を指定 */
+  height: 150px; /* 領域の高さを指定 */
+  margin: 1em 0;
+  background-color: WhiteSmoke;
+  /* background-color: White; */
+  margin:10px 0px 5px 15px;
+}
+
+#item-list img{
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: auto;
+   width: auto;
+   max-width: 100%;
+   max-height: 100%;
+   margin: auto;
+}
+
+#item-list p{
+  margin: 7px 10px -5px;
+  line-height: 25px;
+}
+
+#item-list .last{
+  margin: 4px 0px -5px 0px;
+  line-height: 25px;
+}
+
+#upload p{
+  margin: 15px 50px 15px 18px;
+}
+
+#upload ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* 商品一覧のリストの設定 */
+#upload ul li {
+  display: block;
+  float: left;
+  list-style-type: none;
+  text-align: center;
+  margin: -20px 40px 0px 0;
+}
+
+#upload .main-box{
+  position: relative;
+  width: 150px; /* 領域の幅を指定 */
+  height: 150px; /* 領域の高さを指定 */
+  margin: 1em 0;
+  border: 1px solid red;
+  background-color: white;
+  margin:10px 0px 5px 15px;
+  }
+
+#upload .box{
+  position: relative;
+  width: 150px; /* 領域の幅を指定 */
+  height: 150px; /* 領域の高さを指定 */
+  margin: 1em 0;
+  background-color: white;
+  margin:10px 0px 5px 15px;
+}
+
+#upload img{
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: auto;
+   width: auto;
+   max-width: 100%;
+   max-height: 100%;
+   margin: auto;
+}
+
+.access table {
+  float: left;
+}
+
+.access th,
+.access td {
+  text-align: left;
+  vertical-align: top;
+  line-height: 2.5;
+}
+
+.access td {
+  padding-left: 30px;
+}
+
+.access iframe {
+  margin-top: -40px;
+  width: 460px;
+  float: right;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.form {
+  background-color: #eaeaea;
+  padding: 30px 50px;
+  margin-top: 30px;
+}
+
+.form dl dt {
+  width: 165px;
+  padding: 10px 0;
+  float: left;
+  clear: both;
+}
+
+.form dl dd {
+  padding: 10px 0;
+}
+
+.form label {
+ margin-right: 40px;
+}
+
+.form .email {
+  width: 300px;
+  height: 30px;
+}
+
+.form .tel {
+  width: 240px;
+  height: 30px;
+}
+
+.form .type {
+  width: 180px;
+  height: 30px;
+}
+
+.form .message {
+  width: 660px;
+  height: 80px;
+}
+
+.form button {
+  background-color: #009cd3;
+  color: #ffffff;
+  font-size: 20px;
+  width: 120px;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  border: 3px solid #009cd3;
+}
+
+.form button:hover {
+  background-color: #ffffff;
+  color: #009cd3;
+  cursor: pointer;
+}
+
+.form .required:after {
+  content: "*";
+  color: #ff0000;
+}
+
+.form .attention {
+  margin: 20px 0 0 0;
+}
+
+#buy {
+  background-color: #009cd3;
+  color: #ffffff;
+  font-size: 15px;
+  width: 120px;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  border: 1px solid #009cd3;
+  margin: 20px 0px 0px 290px;
+}
+
+#buy:hover {
+  background-color: #ffffff;
+  color: #009cd3;
+  cursor: pointer;
+}
+
+#delete {
+  background-color: #F5F5F5;
+  color: black;
+  font-size: 15px;
+  width: 120px;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+  border: 1px solid #C0C0C0;
+  margin: 20px 0px 0px 290px;
+}
+
+#delete:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.product-table table {
+  width: 700px;
+  background-color: #F5F5F5;
+  text-align: center;
+}
+
+.product-table td {
+  height: 80px;
+}
+
+.product-table th {
+  background-color: #ddedff;
+  height: 50px;
+}
+
+.product-table img {
+ margin: 0px auto 30px;
+}
+
+.product-table .top {
+  object-fit: contain;
+  width: 450px;
+  height: 450px;
+  margin-top: 30px;
+}
+
+.next {
+  display: inline-flex;
+}
+
+.ok_btn {
+  margin-left: 15px;
+}
+/*
+@media screen and (max-width:600px) {
+  画面サイズが600px以下の場合に適用
+
+  body {
+   font-size: 3.5vw;
+  }
+
+  h1 {
+    font-size: 7.2vw;
+  }
+
+  h2 {
+    font-size: 6vw;
+  }
+
+  header {
+    width: auto;
+    margin: 0 5%;
+  }
+
+  .logo {
+    float: none;
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .global-nav {
+    float: none;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .global-nav li {
+    display: inline;
+    float: none;
+    margin: 0 8px;
+  }
+
+  #wrap {
+    margin-top: 40px;
+    padding: 35px 0 0;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .main {
+    float: none;
+    width: auto;
+    margin: 0 5%;
+  }
+
+  h2 img {
+    max-width: 100%;
+  }
+
+  #portfolio {
+    background-image: url(../images/bg-portfolio-sp.jpg);
+  }
+
+  .sidebar {
+    width: auto;
+    float: none;
+    margin: 0;
+    padding: 30px 10% 10px;
+    background-color: #f7f6f4;
+  }
+
+}
+*/
